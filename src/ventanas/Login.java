@@ -1,7 +1,11 @@
 package ventanas;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import java.sql.*;
@@ -19,6 +23,55 @@ public class Login extends javax.swing.JFrame {
         setResizable(false);
         setTitle("Acceso al Sistema");
         setLocationRelativeTo(null);
+        
+        
+
+        // Placeholder for txt_user
+        txt_user.setText("Usuario");
+        txt_user.setForeground(Color.darkGray);
+        txt_user.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (txt_user.getText().equals("Usuario")) {
+                    txt_user.setText("");
+                    txt_user.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (txt_user.getText().isEmpty()) {
+                    txt_user.setText("Usuario");
+                    txt_user.setForeground(Color.GRAY);
+                }
+            }
+        });
+
+        // Placeholder for txt_pass
+        txt_pass.setText("Contraseña");
+        txt_pass.setForeground(Color.darkGray);
+        txt_pass.setEchoChar((char) 0);
+
+        txt_pass.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (String.valueOf(txt_pass.getPassword()).equals("Contraseña")) {
+                    txt_pass.setText("");
+                    txt_pass.setForeground(Color.BLACK);
+                    txt_pass.setEchoChar('●');
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (String.valueOf(txt_pass.getPassword()).isEmpty()) {
+                    txt_pass.setText("Contraseña");
+                    txt_pass.setForeground(Color.GRAY);
+                    txt_pass.setEchoChar((char) 0);
+                }
+            }
+        });
+        
 //creamos un ob. y buscamos la ruta de la imagen a ocupar
         ImageIcon wallpaper = new ImageIcon("src/images/wallpaperPrincipal.jpg");
 //creamos un ob. y le asignamos la distribucion y la escala de la imagen q ocupará toda la gráfica.
@@ -78,8 +131,8 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jLabel_logg, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 250, 240));
 
         jButton_acceder.setBackground(new java.awt.Color(153, 153, 255));
-        jButton_acceder.setFont(new java.awt.Font("Arial Narrow", 0, 18)); // NOI18N
-        jButton_acceder.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_acceder.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
+        jButton_acceder.setForeground(new java.awt.Color(0,0,0));
         jButton_acceder.setText("Acceder");
         jButton_acceder.setBorder(null);
         jButton_acceder.addActionListener(new java.awt.event.ActionListener() {

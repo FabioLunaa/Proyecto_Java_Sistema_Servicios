@@ -85,25 +85,25 @@ public class AcercaDe extends javax.swing.JFrame {
         setIconImage(getIconImage());
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel_NombreUsuario.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
-        jLabel_NombreUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_NombreUsuario.setText("Sistema creado por el canal de youtube ");
-        getContentPane().add(jLabel_NombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
+        jLabel_NombreUsuario.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel_NombreUsuario.setForeground(new java.awt.Color(0,0,0));
+        jLabel_NombreUsuario.setText("Sistema creado por Luna Fabio Mario");
+        getContentPane().add(jLabel_NombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 40, -1, -1));
 
-        jLabel_NombreUsuario1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+       /* jLabel_NombreUsuario1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel_NombreUsuario1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_NombreUsuario1.setText("La Gikipedia de Fabio");
+        jLabel_NombreUsuario1.setText("Fabio");
         getContentPane().add(jLabel_NombreUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 200, 20));
 
         jLabel_NombreUsuario2.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel_NombreUsuario2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_NombreUsuario2.setText("YouTube La Gikipedia de Fabio");
         getContentPane().add(jLabel_NombreUsuario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, -1, -1));
-
-        jLabel_NombreUsuario3.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
-        jLabel_NombreUsuario3.setForeground(new java.awt.Color(255, 255, 255));
+*/
+        jLabel_NombreUsuario3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel_NombreUsuario3.setForeground(new java.awt.Color(0,0,0));
         jLabel_NombreUsuario3.setText("Facebook / Instagram / Twitter");
-        getContentPane().add(jLabel_NombreUsuario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
+        getContentPane().add(jLabel_NombreUsuario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 110, -1, -1));
         getContentPane().add(jLabel_Wallpaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 330));
 
         pack();

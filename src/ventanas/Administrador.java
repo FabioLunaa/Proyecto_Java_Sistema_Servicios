@@ -133,7 +133,7 @@ public class Administrador extends javax.swing.JFrame {
         });
         getContentPane().add(jButton_tecnico, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 120, 100));
 
-        jButton_acerca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/geekipedia.png"))); // NOI18N
+        jButton_acerca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_evento_acercaDe.png"))); // NOI18N
         jButton_acerca.setBorder(null);
         jButton_acerca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
